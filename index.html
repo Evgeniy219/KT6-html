@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Windows 8</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            color: #dedede;
+            background-color: #222;
+        }
+        .wrapper {
+            height: calc(100vh - 100px);
+            padding: 50px 0 50px 50px;
+            background-color: #222;
+            display: grid;
+            grid-template-rows: auto 1fr;
+            gap: 50px;
+        }
+        header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-right: 50px;
+        }
+        h1, h3 {
+            font-weight: 400;
+            margin: 0;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        h3 {
+            font-size: 2rem;
+            text-align: right;
+        }
+        main {
+            height: 590px;
+            overflow-x: auto;
+        }
+        .scroll {
+            width: 2950px;
+            padding-right: 50px;
+            height: 100%;
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: auto;
+            gap: 40px;
+        }
+        
+        .group {
+            height: 540px;
+            display: grid;
+            gap: 10px;
+        }
+        .middle {
+            grid-column: span 2;
+        }
+        
+        .big {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        
+        .group_1, .group_3, .group_4, .group_6, .group_8, .group_9 {
+            grid-template-columns: repeat(2, 100px);
+            grid-auto-rows: 100px;
+            width: 210px;
+        }
+        
+        .group_2, .group_5, .group_7 {
+            grid-template-columns: repeat(4, 100px);
+            grid-auto-rows: 100px;
+            width: 430px;
+        }
+        
+        .group_1 > div {
+            background: #f06;
+        }
+        .group_2 > div {
+            background: #f30;
+        }
+        .group_3 > div {
+            background: #fc0;
+        }
+        .group_4 > div {
+            background: #0c0;
+        }
+        .group_5 > div {
+            background: #0c9;
+        }
+        .group_6 > div {
+            background: #06c;
+        }
+        .group_7 > div {
+            background: #66c;
+        }
+        .group_8 > div {
+            background: #63c;
+        }
+        .group_9 > div {
+            background: #c06;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Пуск</h1>
+            <h3>User</h3>
+        </header>
+        <main>
+            <div class="scroll">
+                <!-- Группа 1 -->
+                <div class="group group_1">
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="middle"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                </div>
+                
+                <!-- Группа 2 -->
+                <div class="group group_2">
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="middle"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="middle"></div>
+                </div>
+                
+                <!-- Группа 3 -->
+                <div class="group group_3">
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                </div>
+                
+                <!-- Группа 4 -->
+                <div class="group group_4">
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="big"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                </div>
+                
+                <!-- Группа 5 -->
+                <div class="group group_5">
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="big"></div>
+                    
+                    <div class="middle"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                </div>
+                
+                <!-- Группа 6 -->
+                <div class="group group_6">
+                    <div class="middle"></div>
+                    <div class="middle"></div>
+                    <div class="middle"></div>
+                    <div class="middle"></div>
+                    <div class="middle"></div>
+                </div>
+                
+                <!-- Группа 7 -->
+                <div class="group group_7">
+                    <div class="middle"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="middle"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                </div>
+                
+                <!-- Группа 8 -->
+                <div class="group group_8">
+                    <div class="middle"></div>
+                    <div class="middle"></div>
+                    <div class="big"></div>
+                    <div class="middle"></div>
+                </div>
+                
+                <!-- Группа 9 -->
+                <div class="group group_9">
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
